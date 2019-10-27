@@ -34,6 +34,12 @@
    ```
    DAEMON_CONF="/etc/hostapd/hostapd.conf"
    ```
+1. Run the following to unmask hostapd:
+   ```
+   sudo systemctl unmask hostapd
+   sudo systemctl enable hostapd
+   sudo systemctl start hostapd
+   ```
 1. Edit `/etc/dnsmasq.conf` and add the following at the end:
    ```
    ## ADDED by orangerd: setup DHCP on wlan0
